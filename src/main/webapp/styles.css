@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 3px solid #183a79d2;
+    padding-bottom: 36px;
+    margin-top: 50px;
+}
+
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+label[for="apellido"],
+label[for="ci"] {
+    margin-bottom: 10px;
+}
+
+label[for="nombre"],
+label[for="apellido"],
+label[for="ci"] {
+    margin-top: 20px;
+    /* Separación con margen derecho */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    /* Centra el campo de entrada horizontalmente */
+}
+
+button {
+    margin-top: 10px;
+    background-color: #183a79d2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #09307ad2;
+}
+
+.logo {
+    text-align: left;
+    /* Alineación a la izquierda */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 0;
+    left: 0;
+    margin: 10px;
+    /* Margen para separar del borde */
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+
+footer {
+    margin-top: 20px;
+}
+
+footer hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 3px solid #183a79d2;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+}

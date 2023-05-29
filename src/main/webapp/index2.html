@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda de Alumno</title>
+    <!-- Nos lleva al archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo_utec.jpg" alt="Logo UTEC">
+        </div>
+        <h1>Sistema de gestión de alumnos</h1>
+        <h2>Selección de alumnos</h2> <!-- Nuevo título agregado -->
+        <form action="/WebApp_S1/MostrarAlumno.jsp" method="GET">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"
+                placeholder="Puede seleccionar por parte del nombre (no es case sensitive la búsqueda)">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"
+                placeholder="Puede seleccionar por parte del apellido (no es case sensitive la búsqueda)">
+
+            <label for="ci">Cedula de identidad:</label>
+            <!-- minlength="9" maxlength="9" (max y min de caracteres)-->
+            <input type="number" id="ci" name="ci" minlength="8" maxlength="8"
+                placeholder="Numerico. La cedula debe ingresarse en forma completa y solo se admiten digitos">
+
+            <button type="submit">Buscar</button>
+        </form>
+        <footer>
+            <hr>
+            <p>Unidad Curricular de Programación de Aplicaciones Web - UTEC - 2023</p>
+        </footer>
+    </div>
+</body>
+
+</html>
